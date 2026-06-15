@@ -1,0 +1,199 @@
+ /* making them global for access */
+:root{ 
+   --bg: #F7F3ED;    
+    --sidebar: #E6D9C6;
+    --primary: #A66A4A;
+    --dark: #6D4C41;
+    --text: #2D2D2D;
+    --card: #ffffff;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    margin:0;
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+.maincontainer{
+    display:flex;
+    flex-direction:row;
+    z-index:1000;
+}
+
+.searchcontainer{
+    width:70%;
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    padding:12px 16px;
+    border:none;
+    box-shadow:0 4px 20px rgba(0,0,0,0.8);
+    border-radius:50px;
+    background:white;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:90px;
+    right:0;
+    width:100%;
+    height:150px;
+    background:var(--bg);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+      padding-right:20px;
+    z-index:1000;
+}
+
+.maincontainer h1{
+    color:var(--dark);
+    font-size:2rem;
+    margin-left:5px;
+    font-weight:700;
+}
+
+#logocontainer{
+    border-radius:50%;
+    overflow:hidden;
+    height:75px;
+    width:75px;
+    box-shadow: 4px 4px 10px rgba(68, 43, 22, 0.8);
+    margin-bottom:15px;
+}
+
+#logo{
+    width:100%;
+    height:100%;
+}
+
+.search{
+    display:flex;
+    flex-direction:row;
+}
+
+#searchbar{
+   border:none;
+   outline:none;
+   width:100%;
+   margin-left:20px;
+   background:transparent;
+   font-size:16px;
+}
+
+#lens{
+    border: none;
+    outline:none;
+    background:white;
+   margin-right:10px;
+   color:var(--primary);
+}
+#lens:hover{
+    cursor: pointer;
+}
+
+#b1, #b2, #b3, #b4, #b5,#b6,#b7{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    padding:20px;
+    background:white;
+    margin-bottom:30px;
+    color:var(--dark);
+    box-shadow:0 4px 10px rgba(0,0,0,0.8);
+    border:none;
+    outline:none;
+    font-size:20px;
+}
+
+#b1:hover, #b2:hover, #b3:hover, #b4:hover, #b5:hover,#b6:hover,#b7:hover{
+    background:var(--primary);
+    color:white;
+    transform:translateY(-4px);
+}
+
+#btns{
+     padding-bottom:15px;
+}
+
+.categories{
+   position:fixed;
+   top:0;
+   left:0;
+   width:90px;
+   background:var(--sidebar);
+   border-right:none;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+  padding-top:15px;
+  height:100%;
+   gap:2px;
+   z-index:999;
+}
+
+.gallery{
+    margin-left: 200px;
+    padding-top:300px;  
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  
+    column-gap: 15px;
+}
+
+.card{
+    background:var(--bg);
+    /* prevents an element from breaking across two pages or columns */
+    break-inside:avoid; 
+    margin-bottom:15px;
+    position:relative;
+}
+
+.card img{
+    width:100%;
+    display:block;
+    border-radius:16px;
+}
+
+.likebtn{
+    border:none;
+    outline:none;
+    font-size:18px;
+}
+.downloadbtn{
+     border:none;
+    outline:none;
+    font-size:18px;
+}
+
+/* for spinner */
+.loader{
+    display:none; /* hides the loader by default until js loades it*/
+    width:50px;
+    height: 50px;
+    border:5px solid #ddd;
+    border-top:5px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    position:fixed;
+    top:50%;
+    left:55%;
+    transform:translate(-50%,-50%); /*shifts loader backward by half of its own width and height */
+    z-index:2000;
+}
+@keyframes spin {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);  /*starts the loop perfectly at 0 rotation*/
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg); /*completes one full rotation*/
+    }
+}
+
+
+
+

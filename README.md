@@ -1,4 +1,4 @@
-Image Gallery
+#Image Gallery
 
 A responsive Pinterest-inspired Image Gallery built using HTML, CSS, and JavaScript, powered by the Pexels API.
 
@@ -16,7 +16,7 @@ Loading spinner during API requests
 Responsive gallery layout
 Pinterest-style user interface
 
-Technologies Used
+#Technologies Used
 
 HTML5
 CSS3
@@ -25,5 +25,5 @@ Pexels API
 Local Storage
 
 
-Screenshot
+#Screenshot
 <img width="1902" height="1077" alt="image" src="https://github.com/user-attachments/assets/101f8d90-a986-46c6-bb86-fa6de2215810" />

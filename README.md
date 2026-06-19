@@ -1,4 +1,4 @@
-]# Image Gallery
+# Image Gallery
 
 A responsive Pinterest-inspired Image Gallery built using **HTML, CSS, and JavaScript**, powered by the **Pexels API**. The application allows users to search for high-quality images, like their favorites, save images for later viewing, and enjoy a clean Pinterest-style browsing experience.
 
